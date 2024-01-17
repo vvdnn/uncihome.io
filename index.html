@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/gallery.css" />
+    <link rel="stylesheet" href="./styles/order.css" />
+    <link rel="stylesheet" href="./styles/contact-us.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Rest</title>
+  </head>
+  <body class="container">
+    <header class="header">
+      <img src="./assets/icons/logo.png" alt="logo" class="header__logo" />
+      <ul class="header__navigation">
+        <li class="header__navigation__item">
+          <a href="#about-us">Про нас</a>
+        </li>
+        <li class="header__navigation__item">
+          <a href="#gallery">Галерея</a>
+        </li>
+        <li class="header__navigation__item">
+          <a href="#order">Забронювати</a>
+        </li>
+        <li class="header__navigation__item">
+          <a href="#contact-us">Контакти</a>
+        </li>
+      </ul>
+    </header>
+    <button class="popup__btn" onclick="togglePopup()">
+      <img src="./assets/icons/chat-bg.png" class="chat__bg" alt="chat bg" />
+      <img src="./assets/icons/chat.png" class="chat" alt="chat" />
+      <span class="chat__dot"></span>
+    </button>
+    <div class="popup-container">
+      <span class="close-btn" onclick="togglePopup()"
+        ><img src="./assets/icons/close.png" class="close-btn-img" alt="close"
+      /></span>
+      <div class="chat__message">
+        <div class="chat__avatar">
+          <img
+            src="./assets/images/avatar.jpg"
+            class="chat__avatar__img"
+            alt="avatar"
+          />
+          <span class="chat__avatar__dot"></span>
+        </div>
+        <div class="chat__message__item">
+          <img
+            src="./assets/images/chatImg.png"
+            class="chat__img"
+            alt="img-message"
+          />
+          <h3 class="chat__message__text">
+            Привіт! Мене звати Дарина, чим можу допомогти?
+          </h3>
+        </div>
+      </div>
+      <div class="chat__input__container">
+        <input
+          type="text"
+          class="chat__input"
+          placeholder="Напишіть повідомлення..."
+        />
+        <img
+          class="chat__input__img"
+          src="./assets/icons/send.png"
+          alt="chat input send"
+        />
+      </div>
+    </div>
+
+    <section class="main" id="about-us">
+      <img
+        src="./assets/images/main-background.png"
+        class="main__background"
+        alt="main-background"
+      />
+      <img
+        src="./assets/images/gradient.png"
+        class="main__gradient"
+        alt="main-fradient"
+      />
+      <img
+        src="./assets/images/main-home.png"
+        class="main__home"
+        alt="main-home"
+      />
+      <div class="main__info">
+        <h1 class="main__info__headline">Відпочинок на природі</h1>
+        <h1 class="main__info__headline">Приватний простір</h1>
+        <h1 class="main__info__headline">Генератор</h1>
+        <h1 class="main__info__headline">Чан, гриль</h1>
+        <button class="main__info__btn">BOOKING</button>
+      </div>
+      <h2 class="main__location">
+        <img src="./assets/icons/Region.png" alt="region" />С. Орявчик
+      </h2>
+    </section>
+    <section class="gallery" id="gallery">
+      <div class="gallery__top">
+        <div class="gallery__top__item">
+          <img
+            src="./assets/icons/gallery/Last 24 Hours.png"
+            alt="Last 24 Hours"
+            class="gallery__top__item__img"
+          />
+          <h4 class="gallery__top__item__title">Заїзд 24/7</h4>
+        </div>
+        <div class="gallery__top__item">
+          <img
+            src="./assets/icons/gallery/Wi-Fi.png"
+            alt="Wi-Fi"
+            class="gallery__top__item__img"
+          />
+          <h4 class="gallery__top__item__title">Швидкий інтернет</h4>
+        </div>
+        <div class="gallery__top__item">
+          <img
+            src="./assets/icons/gallery/Sofa.png"
+            alt="Sofa"
+            class="gallery__top__item__img"
+          />
+          <h4 class="gallery__top__item__title">Всі меблі</h4>
+        </div>
+        <div class="gallery__top__item">
+          <img
+            src="./assets/icons/gallery/Shower.png"
+            alt="Shower"
+            class="gallery__top__item__img"
+          />
+          <h4 class="gallery__top__item__title">Власна ванна</h4>
+        </div>
+        <div class="gallery__top__item">
+          <img
+            src="./assets/icons/gallery/Quick Mode On.png"
+            alt="Quick"
+            class="gallery__top__item__img"
+          />
+          <h4 class="gallery__top__item__title">Генератор</h4>
+        </div>
+        <div class="gallery__top__item">
+          <img
+            src="./assets/icons/gallery/TV.png"
+            alt="TV"
+            class="gallery__top__item__img"
+          />
+          <h4 class="gallery__top__item__title">TV</h4>
+        </div>
+      </div>
+      <div class="gallery__content">
+        <div class="gallery__feedbacks">
+          <h2 class="gallery__feedbacks__title">Відгуки</h2>
+          <div class="gallery__feedbacks__item">
+            <img
+              src="./assets/images/gallery/Avatar1.png"
+              class="gallery__feedbacks__item__avatar"
+              alt="avatar"
+            />
+            <img
+              src="./assets/images/gallery/Message.png"
+              class="gallery__feedbacks__item__message"
+              alt="message"
+            />
+            <span class="gallery__feedbacks__item__text"
+              >Дуже зручна система без персоналу. Сам собі хазяїн :)</span
+            >
+          </div>
+          <div class="gallery__feedbacks__item">
+            <img
+              src="./assets/images/gallery/Avatar2.png"
+              class="gallery__feedbacks__item__avatar"
+              alt="avatar"
+            />
+            <img
+              src="./assets/images/gallery/Message.png"
+              class="gallery__feedbacks__item__message"
+              alt="message"
+            />
+            <span class="gallery__feedbacks__item__text"
+              >Зробила подарунок на річницю весілля. Ідеально провели час!</span
+            >
+          </div>
+          <div class="gallery__feedbacks__item">
+            <img
+              src="./assets/images/gallery/Avatar3.png"
+              class="gallery__feedbacks__item__avatar"
+              alt="avatar"
+            />
+            <img
+              src="./assets/images/gallery/Message.png"
+              class="gallery__feedbacks__item__message"
+              alt="message"
+            />
+            <span class="gallery__feedbacks__item__text"
+              >Набридло сидіти у бетонних джунглях. Взяв ремоут і на
+              природу.</span
+            >
+          </div>
+        </div>
+        <div class="gallery__slider">
+          <h2 class="gallery__slider__title">Галерея</h2>
+          <div class="slider">
+            <img class="slide" src="./assets/images/gallery/slide1.jpg" />
+            <img class="slide" src="./assets/images/gallery/slide2.jpg" />
+            <img class="slide" src="./assets/images/gallery/slide3.jpg" />
+            <img class="slide" src="./assets/images/gallery/slide4.jpg" />
+            <img class="slide" src="./assets/images/gallery/slide5.jpg" />
+            <img class="slide" src="./assets/images/gallery/slide6.jpg" />
+            <img class="slide" src="./assets/images/gallery/slide7.jpg" />
+            <img class="slide" src="./assets/images/gallery/slide8.jpg" />
+
+            <button class="slider__btn__left" onclick="plusDivs(-1)">
+              <img src="./assets/icons/gallery/arrowLeft.png" />
+            </button>
+            <button class="slider__btn__right" onclick="plusDivs(1)">
+              <img src="./assets/icons/gallery/arrowRight.png" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__info">
+        <div class="gallery__info__message">
+          <img
+            src="./assets/images/gallery/info.png"
+            alt="message"
+            class="gallery__info__message__img"
+          />
+          <span class="gallery__info__message__text">
+            Нам відомо, як іноді хочеться втекти від галасу міста та просто
+            відпочити.
+          </span>
+        </div>
+        <h2 class="gallery__info__headline">
+          Дивіться Netflix, грайте у настільні ігри, смажте м’ясо та овочі,
+          розслабтеся у тому самому чані.
+        </h2>
+        <div class="gallery__info__items">
+          <div class="gallery__info__item">
+            <div class="gallery__info__item__bg">
+              <img
+                src="./assets/icons/gallery/Calendar.png"
+                class="gallery__info__item__img"
+                alt="gallery"
+              />
+            </div>
+            <h5 class="gallery__info__item__title">
+              Оберіть дату для перебування
+            </h5>
+          </div>
+          <div class="gallery__info__item">
+            <div class="gallery__info__item__bg">
+              <img
+                src="./assets/icons/gallery/Phone.png"
+                class="gallery__info__item__img"
+                alt="gallery"
+              />
+            </div>
+            <h5 class="gallery__info__item__title">
+              Залиште контакти для зв’язку
+            </h5>
+          </div>
+          <div class="gallery__info__item">
+            <div class="gallery__info__item__bg">
+              <img
+                src="./assets/icons/gallery/Magnetic Card.png"
+                class="gallery__info__item__img"
+                alt="gallery"
+              />
+            </div>
+            <h5 class="gallery__info__item__title">
+              Сплатіть за перебування у будиночку
+            </h5>
+          </div>
+          <div class="gallery__info__item">
+            <div class="gallery__info__item__bg">
+              <img
+                src="./assets/icons/gallery/Password.png"
+                class="gallery__info__item__img"
+                alt="gallery"
+              />
+            </div>
+            <h5 class="gallery__info__item__title">
+              Отримайте код від скриньки із ключем
+            </h5>
+          </div>
+          <div class="gallery__info__item">
+            <div class="gallery__info__item__bg">
+              <img
+                src="./assets/icons/gallery/Relax.png"
+                class="gallery__info__item__img"
+                alt="gallery"
+              />
+            </div>
+            <h5 class="gallery__info__item__title">
+              Насолоджуйтеся відпочинком
+            </h5>
+          </div>
+        </div>
+        <h3 class="invite__friends">
+          Запрошуйте друзів до спільного відпочинку, відмічайте нас у соціальних
+          мережах та отримуйте знижку 8% на наступне бронювання
+        </h3>
+      </div>
+    </section>
+    <section class="order" id="order">
+      <h1 class="order__headline">МИ ЗНАЄМО, ЯК ОРГАНІЗУВАТИ ВАШЕ ДОЗВІЛЛЯ</h1>
+      <div class="order__content">
+        <img
+          class="order__content__bg"
+          alt="bg"
+          src="./assets/images/order/Home.png"
+        />
+        <form class="order__form">
+          <h3 class="order__form__title">Залиште контакти</h3>
+          <input
+            type="text"
+            class="order__form__input"
+            placeholder="Введіть номер"
+          />
+          <input type="text" class="order__form__input" placeholder="ПІБ" />
+          <button class="order__form__btn">Передзвоніть!</button>
+        </form>
+        <div class="order__calendar">
+          <div class="month">
+            <button class="order__calendar__btn__left">
+              <img src="./assets/icons/order/left.png" alt="arrow left" />
+            </button>
+            <span>Січень 2024</span>
+            <button class="order__calendar__btn__right">
+              <img src="./assets/icons/order/right.png" alt="arrow right" />
+            </button>
+          </div>
+
+          <ul class="weekdays">
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+            <li>Su</li>
+          </ul>
+
+          <ul class="days">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li>31</li>
+            <li class="next__month">1</li>
+            <li class="next__month">2</li>
+            <li class="next__month">3</li>
+            <li class="next__month">4</li>
+          </ul>
+        </div>
+      </div>
+      <h3 class="order__text">
+        Оберіть лише дату та час перебування, а ми попіклуємося про все інше :)
+      </h3>
+    </section>
+    <section class="contact-us" id="contact-us">
+      <h2 class="contact-us__title">Є питання? Зв’яжися з нами!</h2>
+    </section>
+    <footer class="footer">
+      <div class="columns">
+        <div class="column">
+          <span class="column__title">Головне</span>
+          <a href="#about-us" class="column__text">Про нас</a>
+          <a href="#gallery" class="column__text">Галерея</a>
+          <a href="#order" class="column__text">Забронювати</a>
+          <a href="#contact-us" class="column__text">Контакти</a>
+        </div>
+        <div class="column">
+          <span class="column__title">Юридична інформація</span>
+          <span class="column__text">Політика конфеденційності</span>
+          <span class="column__text"
+            >Умови та <br />
+            положення</span
+          >
+        </div>
+        <div class="column">
+          <span class="column__title">Контакти</span>
+          <span class="column__text"
+            ><img
+              src="./assets/icons/footer/phone.png"
+              class="column__img"
+              alt="column icon"
+            />
+            +38(095) 693-12-77</span
+          >
+          <span class="column__text"
+            ><img
+              src="./assets/icons/footer/viber.png"
+              class="column__img"
+              alt="column icon"
+            />
+            Viber</span
+          >
+          <span class="column__text"
+            ><img
+              src="./assets/icons/footer/mail.png"
+              class="column__img"
+              alt="column icon"
+            />
+            uncihome@gmail.com</span
+          >
+          <span class="column__text"
+            ><img
+              src="./assets/icons/footer/time.png"
+              class="column__img"
+              alt="column icon"
+            />
+            Час роботи <br />
+            08:00 - 21:00</span
+          >
+        </div>
+      </div>
+
+      <div class="socials">
+        <div class="socail__icons">
+          <img
+            src="./assets/icons/footer/twitter.png"
+            class="social__img"
+            alt="socail"
+          />
+          <img
+            src="./assets/icons/footer/linkedin.png"
+            class="social__img"
+            alt="socail"
+          />
+          <img
+            src="./assets/icons/footer/facebook.png"
+            class="social__img"
+            alt="socail"
+          />
+        </div>
+        <span class="social__text"> © 2024 All rights reserved</span>
+        <span class="social__text"> Made by Daryna Parastatova </span>
+      </div>
+    </footer>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>

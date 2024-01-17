@@ -1,0 +1,77 @@
+.main {
+  width: 100%;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.main__background {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  aspect-ratio: 1.68;
+  filter: blur(8px);
+}
+
+.main__gradient {
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.main__home {
+  position: absolute;
+  z-index: 2;
+  bottom: -70px;
+  width: 100%;
+  right: 0;
+  transform: rotate(0.406deg);
+}
+
+.main__info {
+  position: absolute;
+  z-index: 4;
+  top: 247px;
+  left: 126px;
+  color: #fff;
+}
+
+.main__info__headline {
+  color: #fff;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 400;
+  width: 630px;
+  margin: 0;
+}
+
+.main__info__btn {
+  width: 241px;
+  height: 50px;
+  flex-shrink: 0;
+  background-color: #357105;
+  border: none;
+  border-radius: 30px;
+  margin-top: 15px;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main__location {
+  position: absolute;
+  bottom: -80px;
+  left: 118px;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
